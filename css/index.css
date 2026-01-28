@@ -1,0 +1,50 @@
+body {
+  background-color: #00b4d8;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#About,
+#Experience,
+#Connect {
+  margin: 1px 20px;
+  padding: 1px;
+}
+
+#Connect {
+  text-align: left;
+}
+
+h1 {
+  font-family: inconsolata;
+  font-size: 35px;
+  font-weight: bold;
+  color: brown;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: purple;
+}
+
+#Experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+#Experience ul li {
+  padding-top: 10px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 5px;
+  max-width: 500px;
+  margin-left: 30px;
+}
+
+#Connect a {
+  display: block;
+  color: rgb(0, 255, 55);
+  padding-left: 30px;
+}
