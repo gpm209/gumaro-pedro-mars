@@ -2,13 +2,17 @@ body {
   background-color: #00b4d8;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0 20px;
 }
 
 #About,
 #Experience,
 #Connect {
-  margin: 1px 20px;
+  margin: 1px 0;
   padding: 1px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #Connect {
@@ -38,13 +42,35 @@ h2 {
   padding-top: 10px;
   padding-left: 5px;
   margin-bottom: 10px;
-  box-shadow: 2px 2px 5px;
-  max-width: 500px;
-  margin-left: 30px;
+}
+
+#Connect {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(0, 255, 55);
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.title-date {
+  display: flex;
+  font-weight: bold;
+  color: black;
+  width: 100%;
+}
+.date {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.description {
+  padding-left: 20px;
 }
 
 #Connect a {
-  display: block;
-  color: rgb(0, 255, 55);
-  padding-left: 30px;
+  padding-left: 15px;
 }
