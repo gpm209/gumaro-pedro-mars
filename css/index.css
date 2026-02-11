@@ -1,3 +1,7 @@
+/*
+Mobile (default)
+ */
+
 body {
   background-color: #00b4d8;
   color: white;
@@ -73,4 +77,60 @@ header {
 
 #Connect a {
   padding-left: 15px;
+}
+
+/* 
+Tablet 
+*/
+
+@media (min-width: 768px) {
+  /* changes to h1: font-size and color */
+  h1 {
+    font-size: 45px;
+    color: darkred;
+  }
+
+  /* changes to the ul and li of #Experience: padding and background */
+
+  #Experience ul li {
+    padding-left: 15px;
+    background-color: lightblue;
+  }
+
+  /* changes to #Connect: padding and font-size*/
+  #Experience ul li {
+    padding-left: 15px;
+    background-color: rgb(125, 151, 160);
+  }
+
+  /* changes to #Connect: padding and font-size */
+  #Connect a {
+    padding-left: 25px;
+    font-size: 18px;
+  }
+}
+
+/* 
+Desktop 
+*/
+
+@media (min-width: 1024px) {
+  /* changes to h1: font-size and font-style*/
+
+  h1 {
+    font-size: 55px;
+    font-style: italic;
+  }
+
+  /* changes to ul li of #Experience: padding and background */
+  #Experience ul li {
+    padding-left: 25px;
+    background-color: rgba(142, 156, 177, 0.2);
+  }
+
+  /* #Connect a changes: padding + font-size */
+  #Connect a {
+    padding-left: 35px;
+    font-size: 20px;
+  }
 }
