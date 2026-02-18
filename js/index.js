@@ -52,7 +52,7 @@ messageForm.addEventListener("submit", (event) => {
   removeButton.innerText = "remove";
   removeButton.type = "button";
 
-  removeButton.addEventListener("click", () => {
+  removeButton.addEventListener("click", function () {
     let entry = this.parentNode;
     entry.remove();
   });
