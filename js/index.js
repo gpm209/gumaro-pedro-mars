@@ -63,3 +63,25 @@ messageForm.addEventListener("submit", (event) => {
   //clears the form after submitting
   event.target.reset();
 });
+
+// Creating my fetch
+fetch("https://api.github.com/users/gpm209/repos")
+  .then((response) => response.json())
+  .then((data) => {
+    let repositories = data;
+    console.log(repositories);
+
+    //Display repositories in list
+    let projectSection = document.getElementById("Projects");
+
+    let projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      let project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error("Something is wrong: ", error);
+  });
