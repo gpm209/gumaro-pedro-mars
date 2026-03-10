@@ -44,6 +44,9 @@ h2 {
 }
 
 #Experience ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
   padding-top: 10px;
   padding-left: 5px;
   margin-bottom: 10px;
@@ -63,17 +66,25 @@ header {
 
 .title-date {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: bold;
   color: black;
   width: 100%;
+  flex-wrap: wrap;
+}
+.title-date span:first-child {
+  min-width: 0;
+  flex-shrink: 1;
 }
 .date {
   margin-left: auto;
-  margin-right: 50px;
+  white-space: nowrap;
 }
 
-.description {
-  padding-left: 20px;
+#Experience .description {
+  margin-left: 1rem;
+  padding-left: 0;
 }
 
 #Connect a {
@@ -253,18 +264,15 @@ Tablet
     color: darkred;
   }
 
-  /* changes to the ul and li of #Experience: padding and background */
-
-  #Experience ul li {
-    padding-left: 15px;
-    background-color: lightblue;
-  }
-
   /* changes to #Connect: padding and font-size*/
   #Experience ul li {
-    padding-left: 15px;
+    padding-left: 25pxx;
     background-color: rgb(222, 228, 230);
     border-radius: 0.75rem;
+  }
+
+  #Experience .description {
+    margin-left: 2.5rem;
   }
 
   /* changes to #Connect: padding and font-size */
@@ -322,6 +330,10 @@ Desktop
   #Experience ul li {
     padding-left: 25px;
     background-color: rgba(142, 156, 177, 0.2);
+  }
+
+  #Experience .description {
+    margin-left: 20px;
   }
 
   /* #Connect a changes: padding + font-size */
